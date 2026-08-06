@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4</title>
+  </head>
+  <body>
+    <h1>Rafique</h1>
+
+    <script>
+      let person = {
+        name: "Rafique",
+        age: 23,
+        Address: {
+          city: "Captainganj",
+          District: "Kushinagar",
+          State: "Uttar Preadesh",
+        },
+        Skill: ["javaScript", "html", "css"],
+      };
+      console.log(person.Skill);
+
+      // ------------------------method in objects ---------------------------
+      let man = {
+        name: "rafique",
+
+        greet() {
+          console.log("hii this is method called");
+        },
+      };
+      man.greet();
+
+      // ---------------------------------this keywords-------------------------------
+
+      let person2 = {
+        name: "Rafique",
+
+        greeting() {
+          return this.name;
+        },
+      };
+      console.log(person2.greeting());
+
+      //----------------------------------------object distructuring----------------------
+      let person3 = {
+        name: "rafique ahamad",
+        age: 23,
+      };
+      let { name, age } = person3;
+      console.log(name);
+    </script>
+  </body>
+</html>
